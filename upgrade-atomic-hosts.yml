@@ -1,0 +1,7 @@
+---
+- name: Upgrade Atomic hosts
+  hosts: atomic-hosts
+  remote_user: centos
+  become: true
+  roles:
+    - gbraad.atomic-upgrade
